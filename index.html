@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Animes</title>
+    <style>
+                body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('fundo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #F5F5F5;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .about {
+            padding: 50px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            margin-top: 20px;
+        }
+        .about h2 {
+            font-size: 36px;
+            color: #FF69B4;
+        }
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #F5F5F5;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        footer p {
+            margin: 0;
+            color: #F5F5F5;
+        }
+        header div {
+            font-size: 36px;
+            color: white;
+            text-shadow: 2px 2px 8px #FF69B4;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .about h2 {
+            font-size: 36px;
+            color: white;
+            text-shadow: 2px 2px 8px #FF69B4;
+            text-align: center;
+        }       
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+            margin-left: 20px;
+        }
+        nav a {
+            color: #F5F5F5;
+            text-decoration: none;
+            font-size: 20px;
+            background: linear-gradient(45deg, #FF69B4, #8A2BE2);
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .topic-card {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .topic-card a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+        }
+        .topic-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .topic-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        .topic-card:hover img {
+            transform: scale(1.1);
+        }
+        .topic-card h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            margin: 0;
+            color: #FFF;
+            font-size: 24px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="perfil.jpg" alt="Foto de Perfil">
+            <div style="font-size: 36px; color: white; text-shadow: 2px 2px 8px #FF69B4; text-align: center; margin-top: 20px;">Catálogo de Animes by Lorena Melo</div>
+        </div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <section class="hero" style="background: rgba(0, 0, 0, 0.6); padding: 50px; border-radius: 10px;">
+        <h1 style="text-align: center; font-size: 48px; color: #FF69B4;">Descubra novos mundos em cada clique!</h1>
+        <p style="text-align: center; font-size: 18px; color: #F5F5F5;">Explore os melhores animes separados por tópicos e descubra suas próximas maratonas favoritas.</p>
+    </section>
+
+    <section class="topics">
+        <div class="topic-card">
+            <a href="anime_musical.html" target="_blank">
+                <img src="img1.jpg" alt="Anime Musical">
+                <h3>Entretenimento Musical</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="fantasia_sombria.html" target="_blank">
+                <img src="img2.jpg" alt="Fantasia Sombria/Ação Sobrenatural">
+                <h3>Fantasia Sombria/Ação Sobrenatural</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="ova.html" target="_blank">
+                <img src="img3.jpg" alt="OVA / Especial">
+                <h3>OVA / Especial</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="aventura-digital.html" target="_blank">
+                <img src="img4.jpg" alt="Aventura / Fantasia Digital">
+                <h3>Aventura / Fantasia Digital</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="entretenimento.html" target="_blank">
+                <img src="img5.jpg" alt="Música, entretenimento e transmissão de programas infantis e culturais">
+                <h3>Música, entretenimento e transmissão de programas infantis e culturais</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="adultos.html" target="_blank">
+                <img src="img6.jpg" alt="Shounen & Publicações Adultas">
+                <h3>Shounen & Publicações Adultas</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="misterio.html" target="_blank">
+                <img src="img7.jpg" alt="Mistério e Jornada">
+                <h3>Mistério e Jornada</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="ova-extra.html" target="_blank">
+                <img src="img8.jpg" alt="OVAs e Capítulos Extras">
+                <h3>OVAs e Capítulos Extras</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="slice.html" target="_blank">
+                <img src="img9.jpg" alt="Slice of Life Escolar">
+                <h3>Slice of Life Escolar</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="fantasia.html" target="_blank">
+                <img src="img10.jpg" alt="Fantasia e Contos de Fadas">
+                <h3>Fantasia e Contos de Fadas</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="promocional.html" target="_blank">
+                <img src="img11.jpg" alt="Animações Promocionais e Especiais">
+                <h3>Animações Promocionais e Especiais</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="batalha.html" target="_blank">
+                <img src="img12.jpg" alt="Ficção Científica e Batalhas Espaciais">
+                <h3>Ficção Científica e Batalhas Espaciais</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="familia.html" target="_blank">
+                <img src="img13.jpg" alt="Drama Familiar e Relacionamentos">
+                <h3>Drama Familiar e Relacionamentos</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="colaboracoes.html" target="_blank">
+                <img src="img14.jpg" alt="Colaborações e Mídia Digital">
+                <h3>Colaborações e Mídia Digital</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="futebol.html" target="_blank">
+                <img src="img15.jpg" alt="Esportes e Futebol">
+                <h3>Esportes e Futebol</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="misterio.html" target="_blank">
+                <img src="img16.jpg" alt="Mistério, Detetives e Aventuras">
+                <h3>Mistério, Detetives e Aventuras</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="infantil.html" target="_blank">
+                <img src="img17.jpg" alt="Educação Infantil e Segurança">
+                <h3>Educação Infantil e Segurança</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="filmes.html" target="_blank">
+                <img src="img18.jpg" alt="Filmes e Franquias de Anime">
+                <h3>Filmes e Franquias de Anime"</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="shoujo.html" target="_blank">
+                <img src="img19.jpg" alt="Fantasia Mágica e Shoujo">
+                <h3>Fantasia Mágica e Shoujo</h3>
+            </a>
+        </div>
+        <div class="topic-card">
+            <a href="aventura.html" target="_blank">
+                <img src="img20.jpg" alt="Aventuras Infantis e Amizades">
+                <h3>Aventuras Infantis e Amizades</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="about" id="sobre">
+        <h2>Sobre</h2>
+        <p>Oiii!<br>
+        Este protótipo foi criado com muito carinho por mim, utilizando o Visual Studio Code, como parte do meu Trabalho de Conclusão de Curso (TCC). A ideia principal do projeto é desenvolver uma aplicação capaz de classificar animes com base nas suas sinopses, utilizando técnicas de processamento de linguagem natural (PLN) e aprendizado de máquina. 🎥📚✨</p>
+        <p>O desenvolvimento desse sistema tem como objetivo explorar como as informações textuais presentes nas sinopses podem ser analisadas e transformadas em dados úteis para categorizar e identificar os animes em diferentes gêneros ou características.</p>
+        <p>Durante a construção do protótipo, foram utilizadas diversas ferramentas e metodologias modernas, o que também reforça a importância do uso de tecnologias inovadoras na solução de problemas reais. Este trabalho representa não apenas uma aplicação prática das habilidades que desenvolvi ao longo do curso, mas também uma oportunidade de contribuir para a área de classificação automática e recomendação.</p>
+        <p>Espero que esse projeto inspire outros apaixonados por tecnologia e animes a explorar novas ideias e possibilidades. 🚀</p>
+    </section>
+
+    <footer>
+        <p>Feito com meu ❤️ para vocês</p>
+    </footer>
+</body>
+</html>
