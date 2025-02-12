@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura / Fantasia Digital</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('fundo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #F5F5F5;
+        }
+        header, footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+        }
+        .anime-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .anime-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .anime-card a {
+            color: #F5F5F5;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            transition: background 0.3s, transform 0.2s;
+            display: block;
+        }
+        .anime-card a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #FF69B4, #8A2BE2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .back-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #8A2BE2, #FF69B4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aventura / Fantasia Digital</h1>
+    </header>
+    <a href="index.html" class="back-button">← Voltar para a Página Inicial</a>
+    <section class="anime-list">
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45814" target="_blank">Shi Er Shengxiao Gushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45815" target="_blank">Qihuan Long Bao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45816" target="_blank">Guandong Sanbao Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45818" target="_blank">Na Sa Er Ding Dong Youji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45819" target="_blank">Qixing Chuanqi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45820" target="_blank">Qi Jiguang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45821" target="_blank">Luo Baobei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45823" target="_blank">Luo Baobei 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45824" target="_blank">Luo Baobei 3rd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45825" target="_blank">Luo Baobei Ai Kexue</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45827" target="_blank">Luo Baobei Aixin Xiao Juchang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45828" target="_blank">Luo Baobei Ting Gushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45830" target="_blank">Tudou Xia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4584" target="_blank">Topo Gigio</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45832" target="_blank">Yang Jia Jiang Zhi Pan Yang An</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45833" target="_blank">Yang Jia Jiang Zhi Zhan Pengcheng</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45834" target="_blank">Hongse Chuanqi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45836" target="_blank">Shanmao Ji Mi Zhi Zimu Shijie Lixian Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45837" target="_blank">Shanmao He Ji Mi Zhi Kuaile Pian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45838" target="_blank">Shanmao He Ji Mi Zhi Jianianhua</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45839" target="_blank">Shanmao He Ji Mi Zhi Quanjia Le</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45843" target="_blank">Shanmao Ji Mi Zhi Yijia Qin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45844" target="_blank">Shanmao He Ji Mi Zhi Mohuan Pintu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45845" target="_blank">Shanmao He Ji Mi Zhi Pintu Mima</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45846" target="_blank">Da Xia Shanmao He Ji Mi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45847" target="_blank">Da Xia Shanmao He Ji Mi season2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45848" target="_blank">Di Di Bang Bang Zongdongyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45850" target="_blank">Shenqi Xiaozi-Mai Ge Yu Xiao Buji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4586" target="_blank">Daisuki! BuBu ChaCha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45851" target="_blank">Xing Xueyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45852" target="_blank">Xing Xueyuan 2 Zhi Yue Ling Shou Huan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45853" target="_blank">Xing Xueyuan 3 Zhi Pan Duo La Mijing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45854" target="_blank">Zhonghua Xiao Yue Yun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45855" target="_blank">Yanwei Xia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45856" target="_blank">Minjian Gui Shu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45857" target="_blank">Wo Shi Bin Guo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45858" target="_blank">Yu Qilin Gushi Hui: Jingdian Gushi Zong Dong Yuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45860" target="_blank">Xingji Jiazu Zhi Anquan Shaonian Tuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45862" target="_blank">Tian You Fan Tong</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45863" target="_blank">Chao Neng Yongshi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45864" target="_blank">Baxianguohai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45867" target="_blank">Wo Men de Jia Yuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45869" target="_blank">A Ben Mao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45870" target="_blank">Xiaobudian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4590" target="_blank">Soukan Yuugi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/460" target="_blank">One Piece Movie 02: Nejimaki-jima no Daibouken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4591" target="_blank">Yoiko</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45909" target="_blank">Long Wa</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45912" target="_blank">Kala Yuedui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45917" target="_blank">Hibabe</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45922" target="_blank">Wu Buxiang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45936" target="_blank">Sirotsumekusa</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4596" target="_blank">Code Geass: Hangyaku no Lelouch Special Edition - Black Rebellion</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4597" target="_blank">Kouya no Shounen Isamu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45962" target="_blank">Assault Lily: Fruits</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4598" target="_blank">Urikupen Kyuujo-tai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45974" target="_blank">Lu Dang Jin Jian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45975" target="_blank">Kaixin Sishu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45976" target="_blank">Douya Nongchang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45978" target="_blank">Baobei Geda Ding Gua Gua</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45979" target="_blank">Dou Ding De Kuaile Riji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4599" target="_blank">Tanoshii Willow Town</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45981" target="_blank">Jidian Xiao Xinshi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45982" target="_blank">Xi Ge Xi Mei: Kaixin Leyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45984" target="_blank">Shujia Shang De Qimiao Shijie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45985" target="_blank">Yundong Xiao Fuxing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45986" target="_blank">Xiao Chong Sanbao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4600" target="_blank">Aneki... My Sweet Elder Sister The Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45991" target="_blank">Xiaonu Cao E</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45998" target="_blank">Dushi Miao Qitan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/45999" target="_blank">Wanpi Fu Duo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46000" target="_blank">Enen no Shouboutai Mini Anime</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47" target="_blank">Akira</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/461" target="_blank">One Piece Movie 03: Chinjuu-jima no Chopper Oukoku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4601" target="_blank">Fairy Forest Remi-chan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46001" target="_blank">2.43: Seiin Koukou Danshi Volley-bu Mini Anime</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46005" target="_blank">2.43 Mini Anime: Inside Story</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46006" target="_blank">Ku Bao Fangkuai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4603" target="_blank">Kibun Kibun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4604" target="_blank">Reijou Caster: Ingyaku no Wana</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46041" target="_blank">Wang Er Shan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4606" target="_blank">Tsuki Kagerou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4607" target="_blank">Tsuma to Mama to Boin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4608" target="_blank">Yuuwaku Countdown: Akira</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46090" target="_blank">Tales of Crestoria Off Shot Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46094" target="_blank">Shiroi Suna no Aquatope</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46096" target="_blank">Vivy: Fluorite Eye's Song</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/462" target="_blank">One Piece Movie 04: Dead End no Bouken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46103" target="_blank">Odd Taxi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4614" target="_blank">Moero Arthur: Hakuba no Ouji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4615" target="_blank">Yama Nezumi Rocky Chuck</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46143" target="_blank">Kexue Tansuo Zhi Qimiao Dili</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4616" target="_blank">Yumemiru Topo Gigio</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46151" target="_blank">Da Jili Chedui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46155" target="_blank">Zhuangzi Shuo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46158" target="_blank">Feifei De Hangye</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4617" target="_blank">Nana Toshi Monogatari: Hokkyokukai Sensen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4618" target="_blank">RideBack</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/463" target="_blank">One Piece Movie 05: Norowareta Seiken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4621" target="_blank">Arisubyeon-ui Kkumnamu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46214" target="_blank">Tongsheng Tong Qi Kan Shijie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46277" target="_blank">E Bao Xiao Zhandui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46278" target="_blank">Wanhuatong Li De Shijie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46280" target="_blank">Fandou Dou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46284" target="_blank">Tian Tian Hao Haizi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46294" target="_blank">Yongzhe Xueyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46296" target="_blank">Jin Huli He Fen Fenghuang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/464" target="_blank">One Piece Movie 06: Omatsuri Danshaku to Himitsu no Shima</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46306" target="_blank">Cai Yunnan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46308" target="_blank">Shougong Jie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46310" target="_blank">Kaixin Hanzi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46311" target="_blank">Yinyue Qi Xia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46317" target="_blank">Zhongguo Xiongmao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46329" target="_blank">Xiao Huli Faming Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46353" target="_blank">Blue Period</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4638" target="_blank">Milkyway</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46376" target="_blank">Yunlong Chuanqi: Jiulong Zhan Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4639" target="_blank">Gosenzo-sama Banbanzai!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46381" target="_blank">Wudi YoYo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46385" target="_blank">Ding Laotou He Jiong GG</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46386" target="_blank">Xi Xiao Yijia Qin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46387" target="_blank">Bobo Lixian Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46388" target="_blank">Zhiduo Xingjimu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46389" target="_blank">Xiao Chaoren Dui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46390" target="_blank">Xiao Ciwei Lan Doudou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46391" target="_blank">Kaixin Nangua Cun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46392" target="_blank">Waixingren Xiao Nano</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46393" target="_blank">Fengyun Qi Dui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46394" target="_blank">Yule Zong Dong Yuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/465" target="_blank">One Piece Movie 07: Karakuri-jou no Mecha Kyohei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4641" target="_blank">Maroko</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46421" target="_blank">Nanatsu no Taizai Movie 2: Hikari ni Norowareshi Mono-tachi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46423" target="_blank">Niehime to Kemono no Ou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4644" target="_blank">Injoku no Heya</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46432" target="_blank">Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan OVA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4646" target="_blank">Kirameki no Kyoudai: Sex Crime</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/ Shindeiru."" target="_blank">"Tantei wa Mou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46489" target="_blank">Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4650" target="_blank">Seihou Bukyou Outlaw Star Pilot</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46492" target="_blank">Santa Company: Manatsu no Merry Christmas</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/466" target="_blank">One Piece: Taose! Kaizoku Ganzack</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4651" target="_blank">Yume no Crayon Oukoku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4653" target="_blank">Shakkin Shimai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4654" target="_blank">Toaru Majutsu no Index</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4657" target="_blank">Arad Senki: Slap Up Party</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46588" target="_blank">Tenchi Souzou Design-bu Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46589" target="_blank">Dao Zhi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4660" target="_blank">Yoshino no Hime</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/467" target="_blank">Koukaku Kidoutai: Stand Alone Complex</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46605" target="_blank">Dolls' Frontline</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4662" target="_blank">Neo Angelique Abyss: Second Age</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4664" target="_blank">Tekken Chinmi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46631" target="_blank">Jue Ding</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4665" target="_blank">Rurouni Kenshin: Special Techniques</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46653" target="_blank">Duel Masters King!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46655" target="_blank">IDOLiSH7 3rd Season Part 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4667" target="_blank">B-Legend! Battle B-Daman Fire Spirits!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46696" target="_blank">Kuaile Meng Duo Duo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46699" target="_blank">Chengzi Gushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/468" target="_blank">Innocence</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46705" target="_blank">Lanting Xiao Jingling</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46706" target="_blank">Xiao Wan Pi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46707" target="_blank">Tantan Xiao Dongyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4672" target="_blank">Koukaku Kidoutai 2.0</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46712" target="_blank">Songshan Qi Yuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46722" target="_blank">Yi Tang Xiao Gushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46729" target="_blank">Babu Dou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4675" target="_blank">Detective File 1: Kindan no Ai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4680" target="_blank">Bocchan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/469" target="_blank">Karin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46809" target="_blank">Sasami 14: Mahou Shoujo Pretty Sammy</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4682" target="_blank">Ultra Nyan: Hoshizora kara Maiorita Fushigi Neko</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46822" target="_blank">Wei Wo Du Shen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4684" target="_blank">Scarecrowman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4685" target="_blank">Takane no Jitensha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46854" target="_blank">Choegang Top Plate Part 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46859" target="_blank">Zheng Cheng Gong</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4688" target="_blank">Minna Agechau?</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4689" target="_blank">Kaze no Toori Michi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4690" target="_blank">Cyborg 009 (1979)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/470" target="_blank">Okusama wa Joshikousei (TV)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46903" target="_blank">Shanhai Qi Tan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4692" target="_blank">Tragic Silence: Shoujo Yugi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4693" target="_blank">Dochinpira</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46925" target="_blank">Shu Shan Qi Xian Lu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46926" target="_blank">Ye Xing Xia Ying</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46941" target="_blank">Wanpi De Kexue</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46950" target="_blank">Shenqi De Da Yunhe</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4697" target="_blank">Chimera: Target I Datenshi Kourin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/46974" target="_blank">Sukekiyo Ã— The Zemeckises Collab Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4699" target="_blank">Eisai Kyoiku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48" target="_blank">.hack//Sign</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/471" target="_blank">To Heart 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4701" target="_blank">Visionary</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4703" target="_blank">Yes! Precure 5 GoGo! Movie: Okashi no Kuni no Happy Birthday</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47024" target="_blank">Fan Kai Zhe Yi Ye</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47026" target="_blank">Lei Feng</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4705" target="_blank">Tengen Toppa Gurren Lagann: Parallel Works</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47045" target="_blank">Xing Wushen Jue</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47059" target="_blank">Zhonghua Dizi Gui 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47061" target="_blank">Xiao Pu Lin Bian Bian Bian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47062" target="_blank">Hao Mao Mimi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47071" target="_blank">Jimao Xin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4709" target="_blank">Aesop's World</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/472" target="_blank">To Heart</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4712" target="_blank">Digimon Savers: Agumon! Gaomon! Lalamon! Bakuretsu! Jougai Last Battle!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4713" target="_blank">Heart no Kuni no Alice: Wonderful Wonder World</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47123" target="_blank">GG Dou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4714" target="_blank">The Rapeman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4715" target="_blank">Shigofumi: Sore kara</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47159" target="_blank">Tomodachi no Imouto ga Ore ni dake Uzai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47160" target="_blank">Tensai Ouji no Akaji Kokka Saisei Jutsu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4717" target="_blank">Chijoku Kankin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47161" target="_blank">Goblin Slayer 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47165" target="_blank">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV: Shin Shou - Meikyuu-hen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4718" target="_blank">AIKa: Special Trial</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4720" target="_blank">Queen's Blade: Rurou no Senshi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47195" target="_blank">Summertime Render</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/473" target="_blank">Tide-Line Blue</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47207" target="_blank">He Laoshi Anquan Ketang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4722" target="_blank">Skip Beat!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47215" target="_blank">Zhongguo Minsu Gushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47216" target="_blank">Feitian Shaonian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47218" target="_blank">Jibian Ying Meng</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47226" target="_blank">Fei Chai Hu A Ju</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47227" target="_blank">Tuteng Lingyu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47228" target="_blank">Tuteng Lingyu 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47229" target="_blank">Xing Shou Lieren</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47235" target="_blank">Lie Che Shou Hun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47237" target="_blank">Yi Xue</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47238" target="_blank">Wo Yao Hui Jia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4725" target="_blank">Ga-Rei: Zero</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47241" target="_blank">Die Di Baobei: Shenqi Ha Ku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47251" target="_blank">Jouran: The Princess of Snow and Blood</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47255" target="_blank">Boku wa Boku wo Suki ni Naru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47258" target="_blank">Shinigami Bocchan to Kuro Maid</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4727" target="_blank">Druaga no Tou: The Sword of Uruk</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47268" target="_blank">Cao Jingling</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47271" target="_blank">He NÃ¼'er De Richang 2nd Season Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4729" target="_blank">Natural 2: Duo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4730" target="_blank">Inyoku Tokkyuu Zetsurinou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/474" target="_blank">Macross Plus</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4731" target="_blank">Hiiro no Koku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47308" target="_blank">Shin Gengou Nyankogelion</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4732" target="_blank">Grope: Yami no naka no Kotori-tachi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4733" target="_blank">Blue Remains</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47347" target="_blank">Kuang Wan Zhan Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47348" target="_blank">Xiao Xing De Zhongguo Mingzhu Zhi Lu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47349" target="_blank">Pan Hu Chuanqi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47351" target="_blank">Kaibutsu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47352" target="_blank">Xin Ba Gou He Ha Mi Tu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47353" target="_blank">Xiangyang Meng Wuyu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47354" target="_blank">Donghua Shi Ba Bi Zhi Xiha Lou Wei Dongman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47355" target="_blank">Dan Dan Long He Ta De Xiao Huobanmen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47356" target="_blank">Mi Nuo De Zhong Er Qingchun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47358" target="_blank">Wai Xing Da Caoyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47359" target="_blank">Sai Ya Lixian Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47360" target="_blank">Xiongmao Xiao Rang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4737" target="_blank">Himitsukessha Taka no Tsume</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47361" target="_blank">Chong Chongwu Yu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47362" target="_blank">Baba Bao Bao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47363" target="_blank">2012 Ka Ku Chunwan Zhi Long Xing Tianxia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47364" target="_blank">Tudou Xia Zhi Zhengjiu Yueliang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47366" target="_blank">Ju Shu 5 Sui Hua</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47367" target="_blank">Jiutian Qi Yuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47368" target="_blank">Da Xing Zuo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47369" target="_blank">Muzi Muyu Zhenxin Hua</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47370" target="_blank">Guo Hun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47371" target="_blank">Xiaodou Pai Pai Wenzi Wangguo Lixian Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47372" target="_blank">Long Zhi Gu Tebie Pian: Bingshuang Jian Zou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47373" target="_blank">Guaiwu Xuetang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47374" target="_blank">Naohonghong De Huihua Ben</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47375" target="_blank">Mei Shaonu Da Picha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47376" target="_blank">Mei Shaonu Da Picha Fanwai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47378" target="_blank">Meng Ji Xiaodui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47379" target="_blank">Meng Ji Xiaodui season2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47380" target="_blank">Meng Ji Xiaodui season3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47381" target="_blank">Bai Bian Bu Lu Ke</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47382" target="_blank">Bai Bian Bu Lu Ke season2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47383" target="_blank">Bai Bian Bu Lu Ke 3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47384" target="_blank">Bai Bian Bu Lu Ke 4</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47385" target="_blank">Bai Bian Bu Lu Ke season5</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47386" target="_blank">Bu Lu Ke Zhandui Zhi Yuan Xing Shi Shouwei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47390" target="_blank">Sanguo Yanyi(2017)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47391" target="_blank">Seven Knights Revolution: Eiyuu no Keishousha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47393" target="_blank">Wangzhe? Bie Nao! Fanwai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47394" target="_blank">Wangzhe? Bie Nao! season2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47396" target="_blank">Gogyou koukyoukyoku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47398" target="_blank">Chuukou Ikkan!! Kimetsu Gakuen Monogatari: Valentine-hen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/475" target="_blank">Hotori: Tada Saiwai wo Koinegau</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47402" target="_blank">Heikousen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47404" target="_blank">Kuiba Zhi Shu Tu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47405" target="_blank">Wanmei Shijie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47409" target="_blank">Gekijou Tanpen Macross Frontier: Toki no Meikyuu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4742" target="_blank">Papa to Odorou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47411" target="_blank">Initial D Battle Stage 3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47413" target="_blank">Detective Conan: The Scarlet Alibi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47418" target="_blank">Bishoujo Senshi Sailor Moon Eternal Movie 1 Recap</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47425" target="_blank">Bessatsu Kamen Rider Saber: Tanpen Katsudou Manga Shuu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47427" target="_blank">23-ji no Saga Meshi Anime</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47428" target="_blank">Xin Chenglong Lixian Ji Zhi Mengjing Shouhu Zhe</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47430" target="_blank">Feng Sheng Shui Qi Zhi 24 Jieqi De Gushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4744" target="_blank">Akaneiro ni Somaru Saka</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47431" target="_blank">Gon De Hanta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47432" target="_blank">Gon De Hanta season2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47433" target="_blank">Gon De Hanta season2 special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47436" target="_blank">Gon De Hanta season3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47437" target="_blank">Ta Ta Turan Xiangdao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47438" target="_blank">Congming De Shunliu: Teshu Renwu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47440" target="_blank">Xiagu Zhong An Zu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47441" target="_blank">Xiagu Zhong An Zu season4</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47442" target="_blank">Wulongyuan Zhi Huobao Chuanqi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47444" target="_blank">Tiantian Chengzhang Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47445" target="_blank">Tiantian Chengzhang Ji season2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47446" target="_blank">Tiantian Chengzhang Ji season3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47447" target="_blank">Tiantian Chengzhang Ji season4</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47448" target="_blank">Bao Shou Lieren</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47453" target="_blank">Kan Ge Qiu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/476" target="_blank">Ginban Kaleidoscope</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4752" target="_blank">Vampire Knight: Guilty</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47538" target="_blank">Inou no AICis: ESP & High School Detective</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47542" target="_blank">Chaoji Xiaoxiong BOOMi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47545" target="_blank">Ba Nian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47546" target="_blank">Taoqi Huaxue</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47549" target="_blank">Doupo Cangqiong: Q Ban Xiao Juchang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47550" target="_blank">5 Dong 32 Hao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4756" target="_blank">Hello Harinezumi: Satsui no Ryoubun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47551" target="_blank">5 Dong 32 Hao: Hesui Fan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47552" target="_blank">Guoshu Leyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47554" target="_blank">Dan Ding Dang Lixian Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47555" target="_blank">Tunshu Zhen Lequ Sanzijing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47556" target="_blank">Xiao Yu Er Qiyu Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47557" target="_blank">Guai Baobao Ting Gushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47558" target="_blank">Xiao Gou Pipi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47559" target="_blank">Haha Da Maoxian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47561" target="_blank">Yu Laoban No Richang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47564" target="_blank">Xiao Laba: Tanxian Qiyu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47565" target="_blank">Hulu Xiang Dingdang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47566" target="_blank">Guoshanche Shou Luo Li</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47567" target="_blank">Ben Ben Yu Jiling</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47568" target="_blank">Ben Ben Yu Jiling: Yishi Xingqiu Xin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47570" target="_blank">Karst Shenqi Zhi Lu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47572" target="_blank">Huanbao Tegong Dui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47573" target="_blank">Huang Doujun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47574" target="_blank">"Huang Doujun Tebie Ban: ""Wang Buliao"""</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47577" target="_blank">Dahai Chengzhang Ji: Baowei Jiayuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47578" target="_blank">Bai Yue Lixian Ji: Zhuang Jin Mima</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47580" target="_blank">Long Qi Shi Episode 0</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47581" target="_blank">Shenqi Le Lutu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47582" target="_blank">Fendou Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47583" target="_blank">Bai Hua Yuan Li De Gushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47585" target="_blank">Tang Dou Wawa</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4760" target="_blank">Kanokon Specials</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/477" target="_blank">Aria the Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4761" target="_blank">Tokyo Loop</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47612" target="_blank">Dao Jian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47613" target="_blank">Chao Zhi Neng Zu Qiu 2: Shijie Dasai Pian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47615" target="_blank">Nu Wushen de Canzhuo Spring Festival Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47617" target="_blank">Yakusoku no Neverland 2nd Season: Michishirube</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47619" target="_blank">Ichi Nichi Shite Narazu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4763" target="_blank">Tsuma Shibori</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47621" target="_blank">Ruguo Lishi Shi Yiqun Miao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47622" target="_blank">Ruguo Lishi Shi Yiqun Miao 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47624" target="_blank">Chickip Dancers</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47625" target="_blank">Ruguo Lishi Shi Yiqun Miao Fanwai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47627" target="_blank">Ruguo Lishi Shi Yiqun Miao 4th Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47628" target="_blank">Ruguo Lishi Shi Yiqun Miao 3rd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47630" target="_blank">Da Zhonghua Xunbao Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47635" target="_blank">Kamen Senshi Lavithunder CM</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47636" target="_blank">Perfect Sekai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47639" target="_blank">A.A</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4765" target="_blank">Gunslinger Girl: Il Teatrino OVA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47641" target="_blank">Yuzhou Huwei Dui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47643" target="_blank">Yuzhou Huwei Dui 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47647" target="_blank">San Zhi Songshu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47648" target="_blank">San Zhi Songshu: Songshu Xiao Zhen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47649" target="_blank">San Zhi Songshu: Songshu Xiao Zhen 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47650" target="_blank">San Zhi Songshu: Zhongguo Xing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47698" target="_blank">Taikong Xueyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47699" target="_blank">Goog Ji Lixian Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/478" target="_blank">Sousei no Aquarion</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47702" target="_blank">Jing Xi Meng Bao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47703" target="_blank">Kongsuni Chengzhang Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47704" target="_blank">Dongwu Hechang Tuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47707" target="_blank">Biancheng Mao: Cheng Chang Riji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4772" target="_blank">Aria the Origination: Sono Choppiri Himitsu no Basho ni...</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47715" target="_blank">Bie Re Liumang Tu Ma Xiu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47717" target="_blank">Bie Re Liumang Tu Ma Xiu 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47718" target="_blank">Bie Re Liumang Tu Ma Xiu 3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4773" target="_blank">Yamato Takeru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47724" target="_blank">Hai! Bei Le Hu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47729" target="_blank">Zhandouban Geji! Shanyao De Richang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47730" target="_blank">Dongwu Jiuyuan Dui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4774" target="_blank">Ningyou Tsukai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47731" target="_blank">Dongbei Meng Shou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47732" target="_blank">Dongbei Meng Shou 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47733" target="_blank">Xiaolong Wan Di: Huanle Xiaoyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47734" target="_blank">Xiao Yang Crook</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47736" target="_blank">Wenzhou Naxie Shi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47737" target="_blank">Wu Liao Kuaihuo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4775" target="_blank">Lunatic Night</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47752" target="_blank">Xiao Tu Demi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47759" target="_blank">Chuanyue Shihun De Lilian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47760" target="_blank">Shaonian A Xing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47761" target="_blank">Xiatian Qu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47762" target="_blank">Xiao Mijiu Dalu You Li Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47763" target="_blank">Saibei Chengzhang Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47765" target="_blank">Ka Ka Kuaile Chengzhang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47766" target="_blank">Wo Jiao Bi Yun Tao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47767" target="_blank">Karen Luna Zhi Richang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47775" target="_blank">Taiji Xiao Zi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47776" target="_blank">Ai Li Baba Zhi Zheng Nengliang Zhi Lu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47777" target="_blank">Huanqiu Da Maoxian: Zhongguo Pian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47778" target="_blank">Toku: Touken Ranbu - Hanamaru - Setsugetsuka</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47779" target="_blank">Kimetsu no Yaiba: Yuukaku-hen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47788" target="_blank">Kaixin Chui Chui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/ Isekai Kizoku ni Tensei suru"" target="_blank">"Sekai Saikou no Ansatsusha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47792" target="_blank">Zai Na Yaoyuan Di Difang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47795" target="_blank">MILG?AM</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47796" target="_blank">Ai Zai Xiyuan Qian 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47798" target="_blank">Ke Ai De Zhngguo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47799" target="_blank">Fei Gou Moco</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47800" target="_blank">Fei Gou Moco: Chongwu Dian De Xiao Mimi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/479" target="_blank">Ueki no Housoku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47801" target="_blank">Sai Er Hao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4782" target="_blank">Mama wa Poyopoyo Saurus ga Osuki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47812" target="_blank">Mamono-tachi no Kunou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47815" target="_blank">Ashuai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47816" target="_blank">Ashuai 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47817" target="_blank">Ashuai 3rd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47820" target="_blank">Ashuai 4th Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4786" target="_blank">Kodomo no Jikan Recap</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4789" target="_blank">ef: A Tale of Melodies.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4790" target="_blank">Zeno: Kagirinaki Ai ni</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47905" target="_blank">Hololive Alternative</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4792" target="_blank">Pokemon: Pikachu Tankentai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47913" target="_blank">Yurikago no Uta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47918" target="_blank">Bocchi the Rock!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4793" target="_blank">Pokemon: Pichu to Pikachu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4794" target="_blank">Pokemon: Pikachu no Dokidoki Kakurenbo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4795" target="_blank">Pokemon: Pika Pika Hoshizora Camp</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47946" target="_blank">Jimu Wuqian Nian: Jimu Chunqiu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47947" target="_blank">Shanguang Xiao Zongdui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47948" target="_blank">Wai Xing Ren Ago</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47949" target="_blank">Wai Xing Ren Ago 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47950" target="_blank">Wai Xing Ren Ago 3rd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47952" target="_blank">Wai Xing Ren Ago 4th Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47953" target="_blank">Shi Wan Ge Weisheme Juchang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47955" target="_blank">Jiligulu He Baba Mao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47956" target="_blank">Dai Meng Wai Xing Ren</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47958" target="_blank">Hui Dao Konglong Shidai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47959" target="_blank">Wanshou Yan Lixian Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47960" target="_blank">Duo Le Yijia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47961" target="_blank">Tiantian Jiayuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4798" target="_blank">Druaga no Tou: The Aegis of Uruk - Jil no Bouken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4799" target="_blank">Mune Kyun! Heartful Cafe</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47983" target="_blank">Xiamen Zhi Xia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47984" target="_blank">Ushigaeru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47987" target="_blank">Zhongyuan Zhi Xing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47988" target="_blank">Xiaodou Pai Pai: Qingshang Pei You</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47989" target="_blank">Ying Tian Xun Youji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47991" target="_blank">Bangongshi Na Dian Shi er</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47997" target="_blank">Bai Niao Chao Feng</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47998" target="_blank">Jing Ling Qi Yuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/47999" target="_blank">Budai Xiao Heshang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/49" target="_blank">Aa! Megami-sama!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/481" target="_blank">Yu?Gi?Oh! Duel Monsters</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48001" target="_blank">Xian Yu Ge</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48003" target="_blank">Huayu Cheng Xing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48004" target="_blank">Huayu Cheng Xing 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48005" target="_blank">Huayu Cheng Xing 3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48006" target="_blank">Dan Dan Zong Dong Yuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48007" target="_blank">Jingzhong Baoguo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48008" target="_blank">Bai Shou Zong Dong Yuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48009" target="_blank">Bai Shou Zong Dong Yuan: Konglong Yongshi Dang An</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48010" target="_blank">Shikong Long Qishi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4802" target="_blank">Suhoyojeong Michel</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48011" target="_blank">23 Hao Niu Nai Tang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48012" target="_blank">Kuaile Xiao Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48013" target="_blank">Wuzhuang Jingling</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48014" target="_blank">Huo Huo Tu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48017" target="_blank">Xiaopin Yijia Ren: Baoxiao Xiaoyuan Pian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48021" target="_blank">Chaoji Gongcheng Xiao Fendui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48023" target="_blank">Tuzi Bei Bei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48024" target="_blank">Fengyu Lang Qiao</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48025" target="_blank">Xiongmao Sanbao: Meng Chong Weishi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48026" target="_blank">Xiao Yang Duo Li</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48027" target="_blank">Xinxin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48028" target="_blank">Konglong Zhanshi Mao Xiao Shuai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48030" target="_blank">Guo Guo Biedongdui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48031" target="_blank">Bianma Xueyuan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48032" target="_blank">Bang Bang Long Chudong: Chuanshuo Zhong De Longwang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48034" target="_blank">Xingfu Lushang (ONA)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48036" target="_blank">Yuzhou Xing Shen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48040" target="_blank">Xingguang Jiazu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48041" target="_blank">Xingguang Jiazu Tebie Pian</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48042" target="_blank">Jingche Xiao Zhi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48044" target="_blank">Suo Long Gu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48045" target="_blank">Chao Neng Xiao Yingxiong</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48046" target="_blank">Xiang Shi Chuanshuo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48049" target="_blank">Xiao Ma Fei Li: Binfen Xianjing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48052" target="_blank">Chaoji Fei Xia: Kan Zhong Guo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48054" target="_blank">Xiao Ying Jinji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48056" target="_blank">Wo Shi Wangzhe</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48057" target="_blank">Xiu Rong Zhen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48059" target="_blank">Zhou Zhou Lu Zhi Meng</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48060" target="_blank">Le Rong Long</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4807" target="_blank">Mashin Eiyuuden Wataru 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48063" target="_blank">Baoxiao Haha Zhen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48066" target="_blank">Xiaokang Lai Le</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48068" target="_blank">Ju Long Shangu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48070" target="_blank">Xiao Shu Luo Fu Tiaozhan Ji</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/4808" target="_blank">Hurricane Polymar</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48071" target="_blank">Koushui Zha Wan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48072" target="_blank">Zhe Shui Qianqiu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48073" target="_blank">Guai Tao Yu Nao Gua</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48074" target="_blank">Jiutian Xing Dai Ni Wan Zhuan Xiqu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48075" target="_blank">Ya Ya Julebu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48077" target="_blank">Hua Huli Yu Daodan Ya</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48078" target="_blank">Daihao 12348</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48079" target="_blank">Shuo Guo Lei Lei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/48080" target="_blank">Bang Bang Yu Qiaqia</a></div>
+    </section>
+    <footer>
+        <p>Feito com ❤️ para os fãs de animes musicais</p>
+    </footer>
+</body>
+</html>
