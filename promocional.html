@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações Promocionais e Especiais</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('fundo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #F5F5F5;
+        }
+        header, footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+        }
+        .anime-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .anime-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .anime-card a {
+            color: #F5F5F5;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            transition: background 0.3s, transform 0.2s;
+            display: block;
+        }
+        .anime-card a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #FF69B4, #8A2BE2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .back-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #8A2BE2, #FF69B4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Animações Promocionais e Especiais</h1>
+    </header>
+    <a href="index.html" class="back-button">← Voltar para a Página Inicial</a>
+    <section class="anime-list">
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21001" target="_blank">Dekakute Ecchi na Ore no Ane</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21009" target="_blank">Sekai de Ichiban Tsuyoku Naritai! Specials</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2102" target="_blank">Tattoon Master</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21013" target="_blank">Marvel Disk Wars: The Avengers</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21019" target="_blank">Noonbory</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2103" target="_blank">TO-Y</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21021" target="_blank">Juugo Shounen Hyouryuuki: Kaizokujima de! Daibouken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21025" target="_blank">Chang</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21027" target="_blank">Saibi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2104" target="_blank">Seto no Hanayome</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21031" target="_blank">Precure All Stars Movie New Stage 3: Eien no Tomodachi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21033" target="_blank">Seikoku no Dragonar</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21037" target="_blank">Uchuu Icchokusen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21039" target="_blank">Gatchaman Crowds: Insight</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2105" target="_blank">Touka Gettan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21041" target="_blank">Follow Me</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2106" target="_blank">Kiss Dum: Engage Planet</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21053" target="_blank">Ikemen Kyuugo-tai Nurse Angels</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21055" target="_blank">Mission School</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21059" target="_blank">Oppai Infinity8! The Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2107" target="_blank">One Piece Movie 08: Episode of Alabasta - Sabaku no Oujo to Kaizoku-tachi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21065" target="_blank">Yakusoku (ONA)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21068" target="_blank">Strange+</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21070" target="_blank">Amanee!: Tomodachinchi de Konna Koto ni Naru Nante!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2108" target="_blank">Rockman.EXE Axess</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21074" target="_blank">Puchimas!!: Petit Petit iDOLM@STER</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21076" target="_blank">Hetalia: The Beautiful World Extra Disc</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2109" target="_blank">Rockman.EXE Stream</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21082" target="_blank">Yu Bang Xiang Zheng</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21086" target="_blank">Witch Craft Works</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2110" target="_blank">Rockman.EXE Beast</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21098" target="_blank">Oni Chichi: Rebuild</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21100" target="_blank">Kenji no Trunk</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/212" target="_blank">Project A-Ko</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2111" target="_blank">Rockman.EXE Movie: Hikari to Yami no Program</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21102" target="_blank">Katta-kun Monogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21106" target="_blank">Love Stage!!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21108" target="_blank">Buddy Spirits</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2112" target="_blank">Over Drive</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2113" target="_blank">Tenkuu Senki Shurato</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21122" target="_blank">Heart Cocktail Again</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2114" target="_blank">Tenkuu Senki Shurato: Sousei e no Anto</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2116" target="_blank">Captain Tsubasa</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2117" target="_blank">Shin Captain Tsubasa</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21162" target="_blank">Wansa-kun OVA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21164" target="_blank">Oni no Ko to Yuki Usagi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2118" target="_blank">Captain Tsubasa: Europe Daikessen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21177" target="_blank">Nobunaga the Fool</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21179" target="_blank">Dragon Fist</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2119" target="_blank">Captain Tsubasa: Ayaushi! Zen Nihon Jr.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21185" target="_blank">Baby Steps</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2120" target="_blank">Captain Tsubasa: Asu ni Mukatte Hashire!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21195" target="_blank">Soul Eater: Late Night Show</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/213" target="_blank">Pia Carrot e Youkoso!!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2121" target="_blank">Captain Tsubasa: Sekai Daikessen!! Jr. World Cup</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21201" target="_blank">Teekyuu 2 Specials</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2122" target="_blank">Captain Tsubasa: Saikyou no Teki! Holland Youth</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21215" target="_blank">Zettai Shougeki: Platonic Heart Picture Drama</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2123" target="_blank">Digimon X-Evolution</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2124" target="_blank">Code Geass: Hangyaku no Lelouch Recaps</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21235" target="_blank">Imanara Maniau! Log Horizon</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2125" target="_blank">Yuu?Yuu?Hakusho: Eizou Hakusho - Ankoku Bujutsukai no Shou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21241" target="_blank">Kyoukai no Kanata: Idol Saiban! Mayoi Nagara mo Kimi wo Sabaku Tami</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2126" target="_blank">Yuu?Yuu?Hakusho: Eizou Hakusho II</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21255" target="_blank">Takarajima (Movie)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2127" target="_blank">Chouja Raideen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21267" target="_blank">Go! Go! 575</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2128" target="_blank">Yuusha Raideen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21273" target="_blank">Gochuumon wa Usagi Desu ka?</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21275" target="_blank">Yawaraka Sensha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21277" target="_blank">Yawaraka Atom</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2129" target="_blank">True Tears</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2130" target="_blank">Kaibutsu Oujo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21291" target="_blank">Sore Ike! Anpanman: Minami no Umi wo Sukue!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21293" target="_blank">Sore Ike! Anpanman: Shabondama no Purun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21295" target="_blank">Sore Ike! Anpanman: Tenohira wo Taiyou ni</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21297" target="_blank">Sore Ike! Anpanman: Yakisobapanman to Black Sabotenman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/214" target="_blank">Pia Carrot e Youkoso!! 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2131" target="_blank">Bokusatsu Tenshi Dokuro-chan 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21305" target="_blank">Trick or Alice</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2132" target="_blank">Inukami! The Movie: Tokumei Reiteki Sousakan Karina Shirou!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2133" target="_blank">Mari Iyagi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21328" target="_blank">Isshuukan Friends.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21330" target="_blank">Mushishi: Hihamukage</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2134" target="_blank">Famiresu Senshi Purin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21336" target="_blank">Double Circle</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21340" target="_blank">Psycho-Pass Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/ Mizu no Iro"" target="_blank">"Sora no Iro</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21350" target="_blank">Kichiku: Haha Shimai Choukyou Nikki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2136" target="_blank">Front Innocent: Mou Hitotsu no Lady Innocent</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2137" target="_blank">Haitokuzuma</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21364" target="_blank">Tokubetsu Jugyou 3 SLG The Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2138" target="_blank">Kage (OVA)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2139" target="_blank">Kakyuusei 2: Anthology</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2140" target="_blank">Aniyome</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21396" target="_blank">Crayon Shin-chan Movie 22: Gachinko! Gyakushuu no Robo To-chan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/215" target="_blank">Pia Carrot e Youkoso!! 2 DX</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2141" target="_blank">Oseam</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21406" target="_blank">Bokura wa Minna Kawai-sou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2142" target="_blank">Blue Dragon</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21420" target="_blank">Detective Conan Movie 18: The Sniper from Another Dimension</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2143" target="_blank">Saiyuuki Reload: Burial</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21427" target="_blank">Minna Atsumare! Falcom Gakuen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2144" target="_blank">Naruto Movie 3: Dai Koufun! Mikazuki Jima no Animaru Panikku Dattebayo!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21431" target="_blank">Gokukoku no Brynhildr</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21433" target="_blank">Chou Zenmairobo: Patrasche</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21435" target="_blank">Yama no Susume Second Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21437" target="_blank">Buddy Complex</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21439" target="_blank">Uta no?Prince-sama? Maji Love Revolutions</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2145" target="_blank">Black Gate: Kanin no Gakuen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21441" target="_blank">Taisei Kensetsu: Sri Lanka Kousokudouro</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21447" target="_blank">Meitantei Rascal</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2146" target="_blank">Canary</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21451" target="_blank">Nihonbashi Koukashita R Keikaku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2147" target="_blank">Call Me Tonight</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21467" target="_blank">Ikkyuu-san to Yancha Hime</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21469" target="_blank">Stand By Me Doraemon</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2148" target="_blank">Okane ga Nai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21471" target="_blank">Mirai Koushi Harima SACLA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21473" target="_blank">Persona 3 the Movie 2: Midsummer Knight's Dream</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21475" target="_blank">Ikkyuu-san: Haru Da! Yancha Hime</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21479" target="_blank">Metal Fight Beyblade Zero G Specials</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21483" target="_blank">Sanchoume no Yuuhi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21485" target="_blank">Dokkan! Robotendon</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21487" target="_blank">Shin Dokonjou Gaeru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21489" target="_blank">Shin Dokonjou Gaeru: Dokonjou Yumemakura</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2150" target="_blank">Tanoshii Muumin Ikka</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21491" target="_blank">Ninjaman Ippei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21493" target="_blank">Ninja Hattori-kun: Nin Nin Ninpo Enikki no Maki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21495" target="_blank">Denpa Kyoushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21497" target="_blank">Sengoku Musou SP: Sanada no Shou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/216" target="_blank">Pia Carrot e Youkoso!!: Sayaka no Koi Monogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2151" target="_blank">Nils no Fushigi na Tabi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21507" target="_blank">Soul Eater NOT!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21509" target="_blank">Trip Trek (2010)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2152" target="_blank">Oh! Edo Rocket</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21511" target="_blank">Kantai Collection: KanColle</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21513" target="_blank">Imako System</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21517" target="_blank">Soratobu Usagi no Yuukai Boushi: Boku Iya Da yo!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2153" target="_blank">Saint Beast: Kouin Jojishi Tenshi Tan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21521" target="_blank">Futa-bu!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21523" target="_blank">Baku Tech! Bakugan Gachi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21525" target="_blank">Geba Geba Shou Time!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2154" target="_blank">Tekkon Kinkreet</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21539" target="_blank">Oraa Guzura Dado</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2155" target="_blank">Kono Aozora ni Yakusoku wo: Youkoso Tsugumi Ryou e</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21541" target="_blank">Hentai Ouji to Warawanai Neko.: Henneko BBS</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21545" target="_blank">Choubakumatsu Shounen Seiki Takamaru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21547" target="_blank">Shin Choubakumatsu Shounen Seiki Takamaru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21549" target="_blank">Hitotsuboshi-ke no Ultra Baasan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2156" target="_blank">Bakugan Battle Brawlers</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21551" target="_blank">Kaitei Toshi no Dekiru made</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21553" target="_blank">Asobo Toy-chan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21558" target="_blank">Omoide no Marnie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2157" target="_blank">Koutetsushin Jeeg</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21562" target="_blank">Ryuugajou Nanana no Maizoukin (TV)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21564" target="_blank">Kamigami no Asobi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2158" target="_blank">Terra e... (TV)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/ Kore Nan no Kagi?"" target="_blank">"Pokemon: Pikachu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21574" target="_blank">Senki Zesshou Symphogear GX</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2159" target="_blank">Ookiku Furikabutte</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21588" target="_blank">Mou Hitotsu no Mirai wo.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21598" target="_blank">Yabai! Fukushuu Yami Site</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2161" target="_blank">Skull Man</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21604" target="_blank">Mekakucity Actors</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2162" target="_blank">Koutetsu Sangokushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2163" target="_blank">AIKa R-16: Virgin Mission</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2164" target="_blank">Dennou Coil</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21636" target="_blank">GJ-bu@</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2165" target="_blank">Gegege no Kitarou (2007)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21642" target="_blank">Planet:Valkyrie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21648" target="_blank">Tamako Love Story</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2166" target="_blank">Doujin Work</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21660" target="_blank">Kill la Kill Specials</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2167" target="_blank">Clannad</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21664" target="_blank">Last Orders</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21668" target="_blank">Non Non Biyori: Okinawa e Ikukoto ni Natta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2168" target="_blank">Sakura Taisen: New York</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2169" target="_blank">Ice</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21682" target="_blank">Hanayamata</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2170" target="_blank">Sousei no Aquarion OVA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/218" target="_blank">Kidou Senkan Nadesico</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2171" target="_blank">Detective Conan Movie 11: Jolly Roger in the Deep Azure</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21707" target="_blank">Pretty Rhythm Movie: All Star Selection - Prism Show?Best Ten</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2172" target="_blank">Crayon Shin-chan Movie 15: Arashi wo Yobu Utau Ketsu dake Bakudan!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21711" target="_blank">Il torero Camomillo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21713" target="_blank">Usagi no Mofy</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21715" target="_blank">Makkuramori no Uta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21717" target="_blank">Koisuru Niwatori</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2173" target="_blank">Kouchuu Ouja Mushiking Super Battle Movie: Yami no Kaizou Kouchuu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21729" target="_blank">Cardfight!! Vanguard: Legion Mate-hen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2174" target="_blank">Hokuto no Ken: Raoh Gaiden Gekitou-hen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/ Nanode"" target="_blank">"Tamayura: More Aggressive - Tsuitachi dake no Shuugakuryokou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2175" target="_blank">Kino no Tabi: The Beautiful World - Byouki no Kuni - For You</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21743" target="_blank">Donten ni Warau</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21749" target="_blank">Kimama ni Idol</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2176" target="_blank">Kiddy Grade: Ignition</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21751" target="_blank">Okusama wa Moto Yariman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21755" target="_blank">Shin Tennis no Ouji-sama OVA vs. Genius 10</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21761" target="_blank">Ari to Hato</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21763" target="_blank">Ari to Hato (1953)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21765" target="_blank">Ari to Hato (1959)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2178" target="_blank">Highlander: The Search for Vengeance</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21771" target="_blank">Romantica Clock</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21773" target="_blank">Sugar*Soldier</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21775" target="_blank">Yugami-kun ni wa Tomodachi ga Inai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2179" target="_blank">Tokimeki Memorial: Forever With You</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21781" target="_blank">Tsubasa to Hotaru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2180" target="_blank">Slow Step</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21797" target="_blank">Chuunibyou demo Koi ga Shitai! Ren Lite</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2181" target="_blank">TANK S.W.A.T. 01</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21809" target="_blank">Kenzen Robo Daimidaler</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2182" target="_blank">Robot Carnival</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2183" target="_blank">Ayane-chan High Kick!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21821" target="_blank">Fuuun Ishin Dai?Shogun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21829" target="_blank">Fella Pure: Mitarashi-san Chi no Jijou The Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21831" target="_blank">Dracula no Uta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21833" target="_blank">Higenashi Gogejabaru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21835" target="_blank">Majin Bone</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2185" target="_blank">Words Worth Gaiden</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21843" target="_blank">Shingeki no Bahamut: Genesis</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21845" target="_blank">Ushinawareta Mirai wo Motomete</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2186" target="_blank">Maid no Yakata: Zetsubou-hen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21852" target="_blank">Tesagure! Bukatsumono Encore</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21856" target="_blank">Hanamonogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2187" target="_blank">Shuudan Chikan Densha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21862" target="_blank">Airy Me</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21864" target="_blank">Mangaka-san to Assistant-san to The Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21868" target="_blank">The Disappearance of Conan Edogawa: The Worst Two Days in History</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21870" target="_blank">Tarepanda</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2188" target="_blank">Maid in Heaven SuperS</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21876" target="_blank">Chou Akuukan Bouheki Cheese Napolitan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21878" target="_blank">High Score Girl</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21880" target="_blank">Sword Art Online: Sword Art Offline - Extra Edition</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2189" target="_blank">Shinseiki Inma Seiden</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2190" target="_blank">Tsubaki Iro no Purijioone</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21899" target="_blank">Gintama: Yorinuki Gintama-san on Theater 2D</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/220" target="_blank">Kuro no Danshou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2191" target="_blank">Waver</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21913" target="_blank">Kanbee-kun ga Yuku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2193" target="_blank">Saiunkoku Monogatari Recaps</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21925" target="_blank">Chichiiro Toiki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2194" target="_blank">Mejoku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21933" target="_blank">Sore Ike! Anpanman: Anpanman to Happy Otanjoubi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21935" target="_blank">Sore Ike! Anpanman: Anpanman to Okashi na Nakama</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21937" target="_blank">Sore Ike! Anpanman: Anpanman to Yukai na Nakama-tachi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21939" target="_blank">Mushishi Zoku Shou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2195" target="_blank">Heisa Byouin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21941" target="_blank">Sore Ike! Anpanman: Anpanman no Jin-Jin-Jingle Bells</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21943" target="_blank">Sore Ike! Anpanman: Baikinman to 3 Bai Punch</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21945" target="_blank">Sore Ike! Anpanman: Baikinman vs. Baikinman!?</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21947" target="_blank">Sore Ike! Anpanman: Gomira no Hoshi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2196" target="_blank">Genmu Senki Leda</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21951" target="_blank">Sore Ike! Anpanman: Hiya Hiya Hiyariko to Babu Babu Baikinman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21953" target="_blank">Sore Ike! Anpanman: Horrorman to Hora Horako</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21955" target="_blank">Sore Ike! Anpanman: Kokin-chan to Namida no Christmas</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21957" target="_blank">Sore Ike! Anpanman: Kokin-chan to Aoi Namida</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21959" target="_blank">Sore Ike! Anpanman: Kuroyuki-hime to Mote Mote Baikinman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21961" target="_blank">Sore Ike! Anpanman: Minna Atsumare! Anpanman World</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21963" target="_blank">Sore Ike! Anpanman: Tsukiko to Shiratama - Tokimeki Dancing</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21967" target="_blank">Sore Ike! Anpanman: Yousei Rinrin no Himitsu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21969" target="_blank">Sore Ike! Anpanman: Yumeneko no Kuni no Nyanii</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2198" target="_blank">Aa! Megami-sama!: Sorezore no Tsubasa Specials</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21971" target="_blank">Sore Ike! Anpanman: Yuuki no Hana ga Hiraku Toki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21973" target="_blank">Sore Ike! Anpanman: Anpanman to Oyakusoku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21975" target="_blank">Sore Ike! Anpanman: Outa to Teasobi Tanoshii ne</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2199" target="_blank">Chirin no Suzu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21981" target="_blank">Pic-lele</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2200" target="_blank">Muteki Choujin Zanbot 3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21995" target="_blank">Ao Haru Ride</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21997" target="_blank">Duel Masters Victory V</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/21999" target="_blank">Duel Masters Victory V3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23" target="_blank">Ring ni Kakero 1</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/221" target="_blank">Mezzo Forte</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2201" target="_blank">Pokemon Movie 09: Pokemon Ranger to Umi no Ouji Manaphy</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2202" target="_blank">Waga Seishun no Arcadia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22013" target="_blank">Koukaku Kidoutai Nyuumon Arise</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2203" target="_blank">Waga Seishun no Arcadia: Mugen Kidou SSX</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2204" target="_blank">Karakurizoushi Ayatsuri Sakon</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22031" target="_blank">Samurai Gun Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22035" target="_blank">Sore Ike! Anpanman: Lyrical?Magical Mahou no Gakkou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22037" target="_blank">Sore Ike! Anpanman: Dokin-chan no Dokidoki Calendar</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22039" target="_blank">Mou Hasamazu ni wa Irarenai?: Hoshi ni Onegai shitara Konnani Okkiku Nacchatta!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2205" target="_blank">Bakuretsu Tenshi: Infinity</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22043" target="_blank">Fairy Tail (2014)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22049" target="_blank">Just Awake</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2206" target="_blank">Galaxy Angel Music Collection: Shouen to Shien no Cassoulet</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22053" target="_blank">Gakkou no Kaidan (OVA)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22055" target="_blank">Gakkou no Kaidan Recaps</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22059" target="_blank">Kakumeiteki Broadway Shugisha Doumei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2207" target="_blank">Hamelin no Violin Hiki: The Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22065" target="_blank">T-Rex</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22069" target="_blank">Swing Out Sisters (2014)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2208" target="_blank">Flutter of Birds II: Tenshi-tachi no Tsubasa</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22071" target="_blank">Mikakunin de Shinkoukei: Mite. Are ga Watashitachi no Tomatteiru Ryokan yo.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2209" target="_blank">V.G.Neo The Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22081" target="_blank">Cosplay Rakuen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2210" target="_blank">Tooi Sekai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22093" target="_blank">Mayonaka wa Junketsu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22097" target="_blank">Magi: Sinbad no Bouken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22099" target="_blank">Hero Bank</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/222" target="_blank">Mezzo DSA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2211" target="_blank">Jumping</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22101" target="_blank">Soredemo Sekai wa Utsukushii</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2212" target="_blank">Bakuretsu Tenshi: Infinity Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22111" target="_blank">Kattobase! Dreamers: Carp Tanjou Monogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22113" target="_blank">Kyoukaisenjou no Horizon: Kyokutou Naruhodo Kouza</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22117" target="_blank">Witch Craft Works: Takamiya-kun to Imouto no Warudakumi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2213" target="_blank">Black Jack (TV)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22126" target="_blank">Kuroko no Basket: Mou Ikkai Yarimasen ka</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2214" target="_blank">Black Jack 21</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22132" target="_blank">Train Heroes Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22136" target="_blank">Ping Pong the Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2215" target="_blank">Kishin Taisen Gigantic Formula</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22146" target="_blank">Kuroshitsuji: Book of Circus</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22148" target="_blank">Amagi Brilliant Park</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2216" target="_blank">Shigurui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2217" target="_blank">Hand Maid May: Akiramemasen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22164" target="_blank">Natsu no Shisen 1942</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22168" target="_blank">Goldfish Fetish</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2218" target="_blank">Fujimi 2-choume Koukyougakudan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22172" target="_blank">Tanaami Keiichi no Shouzou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2219" target="_blank">Ryokunohara Meikyuu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2220" target="_blank">Be-Boy Kidnapp'n Idol</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22198" target="_blank">Yuuto-kun ga Iku Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22200" target="_blank">Akame ga Kill!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/223" target="_blank">Dragon Ball</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2221" target="_blank">Aishite Knight</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2222" target="_blank">Dr. Slump: Arale-chan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22220" target="_blank">Warera Salaryman Tou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2223" target="_blank">Maple Town Monogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22222" target="_blank">Monoshiri Daigaku: Ashita no Calendar</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2224" target="_blank">Hikari no Densetsu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22232" target="_blank">Tenshi no Shippo Chu!: Tenshi no Utagoe</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22240" target="_blank">Mahou no Yousei Persia Pilot</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2225" target="_blank">Alps no Shoujo Heidi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22248" target="_blank">Azumi Mamma?Mia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2226" target="_blank">Mori no Tonto-tachi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2227" target="_blank">Lady Lady!!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22266" target="_blank">Free! Eternal Summer</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2228" target="_blank">Honoo no Toukyuuji: Dodge Danpei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22272" target="_blank">Aries: Shinwa no Seizakyuu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22274" target="_blank">Selector Infected WIXOSS</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2229" target="_blank">Dragon Quest: Dai no Daibouken (TV)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2230" target="_blank">Hana no Ko Lunlun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22294" target="_blank">Mahou no Yousei Persia: Escape!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22296" target="_blank">Juuza Engi: Engetsu Sangokuden - Gaiden Youzhou Genya</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22298" target="_blank">Fate/stay night: Unlimited Blade Works</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2231" target="_blank">Miyuki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2232" target="_blank">Funny Pets</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22314" target="_blank">Shinken Densetsu: Tight Road</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22320" target="_blank">Tokyo Ghoul</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2233" target="_blank">Ocha-ken: Chokotto Monogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22328" target="_blank">Himalaya no Hikari no Oukoku</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22330" target="_blank">Daisougen to Hakuba</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2234" target="_blank">Panda-Z: The Robonimation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2235" target="_blank">Mizu no Kotoba</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22346" target="_blank">Funny Pets 2nd Season</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22348" target="_blank">Pandra The Animation: Shiroki Yokubou Kuro no Kibou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2236" target="_blank">Toki wo Kakeru Shoujo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22360" target="_blank">Sanzoku no Musume Ronja</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2237" target="_blank">Rozen Maiden: Meitantei Kunkun - Duell Walzer</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2238" target="_blank">Fuyu no Semi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2239" target="_blank">Sei Michaela Gakuen Hyouryuuki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2240" target="_blank">Sei Michaela Gakuen Hyouryuuki II</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22394" target="_blank">Sora e</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/225" target="_blank">Dragon Ball GT</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22418" target="_blank">Quantum Leap</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2243" target="_blank">Karasu Tengu Kabuto</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22430" target="_blank">Itadaki! Seieki?</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2244" target="_blank">Rakugo Tennyo Oyui</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22434" target="_blank">Break Blade</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22436" target="_blank">New Mobile Report Gundam Wing: Frozen Teardrop Picture Drama - Aratanaru Tatakai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22440" target="_blank">Hello Kitty: Ringo no Mori no Mystery</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2245" target="_blank">Seraphim Call</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22442" target="_blank">Hello Kitty: Ringo no Mori to Parallel Town</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22444" target="_blank">Hello Kitty no Alps no Shoujo Heidi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22446" target="_blank">Hello Kitty no Yappari Mama ga Suki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22448" target="_blank">Hello Kitty no Momotarou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2246" target="_blank">Mononoke</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22452" target="_blank">Bad Badtz-Maru no Ookami ga Kita!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22456" target="_blank">Hello Kitty no Circus ga Yatte Kita</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22460" target="_blank">Hello Kitty no Shoukoujo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22466" target="_blank">KutsuDaru.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22468" target="_blank">Minihams no Ai no Uta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2248" target="_blank">Naruto: Dai Katsugeki!! Yuki Hime Shinobu Houjou Dattebayo! - Konoha no Sato no Dai Undoukai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22474" target="_blank">Pi~hyara Kouta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22478" target="_blank">Hello Kitty no Tomatta Big Ben</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22480" target="_blank">Hello Kitty no Mahou no Ringo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2249" target="_blank">Amon Saga</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22486" target="_blank">Hello Kitty no Yuki no Joou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22490" target="_blank">Hello Kitty no Hansel to Gretel</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2250" target="_blank">Roots Search: Shokushin Buttai X</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22492" target="_blank">Hello Kitty no Ou-sama no Mimi wa Roba no Mimi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22496" target="_blank">Hello Kitty no Yume no Oshiro no Ouji-sama</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22498" target="_blank">Hello Kitty no Kaguya-hime</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22500" target="_blank">Kitty to Mimmy no Happy Birthday</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/226" target="_blank">Elfen Lied</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2251" target="_blank">Baccano!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22504" target="_blank">Washimo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22508" target="_blank">Initial D Final Stage</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2252" target="_blank">Devilman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2253" target="_blank">Mazinger Z</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22524" target="_blank">Sekai no Hikari: Shinran Shounin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2254" target="_blank">Sentou Mecha Xabungle</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22536" target="_blank">Kiseijuu: Sei no Kakuritsu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2255" target="_blank">Choujuu Kishin Dancougar</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22542" target="_blank">Oniku Daisuki! Zeushi-kun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22544" target="_blank">Kyonyuu Kazoku Saimin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22548" target="_blank">Blade & Soul</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2256" target="_blank">Choujuu Kishin Dancougar: Ushinawareta Mono-tachi e no Requiem</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2257" target="_blank">Taiyou no Kiba Dagram</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22562" target="_blank">Virtual Star 2000</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22566" target="_blank">Bad Badtz-Maru no Ari to Kirigirisu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2258" target="_blank">Choro Q Dagram</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22572" target="_blank">Ahiru no Pekkle no Ahiru no Drakestail</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22574" target="_blank">Kero Kero Keroppi no Aladdin to Mahou no Lamp</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22576" target="_blank">Ahiru no Pekkle no Minikui Ahiru no Ko</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2259" target="_blank">Dr. Rin ni Kiitemite!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22584" target="_blank">Uchuu Kyoudai: Number Zero</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2260" target="_blank">Kirameki?Project</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22596" target="_blank">Kimezou no Kimarimonku Ja Kimaranee.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22598" target="_blank">Kimezou no Kimarimonku Ja Kimaranee. Featuring Sabu-Otoko</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2261" target="_blank">Malice@Doll</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22603" target="_blank">Ahiru no Pekkle no Sindbad no Bouken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22605" target="_blank">Kero Kero Keroppi no Ganbare! Keroppooz</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22607" target="_blank">Ahiru no Pekkle no Suieitaikai wa Oosawagi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22609" target="_blank">Patty & Jimmy no Kimikoso Superstar</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2262" target="_blank">Sin: The Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22611" target="_blank">Ahiru no Pekkle no Aladdin to Mahou no Lamp</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22613" target="_blank">Kero Kero Keroppi no Yowamushi-ouji no Daibouken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22615" target="_blank">Kero Kero Keroppi no Kero Kero House no Himitsu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22617" target="_blank">Pochacco no Wakuwaku Birthday</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22619" target="_blank">Kero Kero Keroppi no Tomodachitte Ii na</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2263" target="_blank">Sonic?the?Hedgehog</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22621" target="_blank">Ahiru no Pekkle no Hihou wo Sagase</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22623" target="_blank">Pochacco no Ninjin Hata wa Oosawagi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22625" target="_blank">Kero Kero Keroppi no Dai Bouken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22627" target="_blank">Santa-san to Tonakai Kuppi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2264" target="_blank">Jungle Taitei Movie (1997)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22631" target="_blank">Peeping Life: Tezuka Pro - Tatsunoko Pro Wonderland</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22633" target="_blank">Peeping Life: Tezuka Pro - Tatsunoko Pro Wonderland Specials</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22635" target="_blank">Peeping Life: Tezuka Pro - Tatsunoko Pro Wonderland ONA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22637" target="_blank">Kero Kero Keroppi no Tomodachi ni Narou yo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22639" target="_blank">Kero Kero Keroppi no Tomodachi wa Mahoutsukai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22641" target="_blank">Kero Kero Keroppi no Bikkuri! Obakeyashiki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22643" target="_blank">Kero Kero Keroppi no Kyouryuu ga Deta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22645" target="_blank">Kero Kero Keroppi no Sora wo Tobetara</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22647" target="_blank">Kero Kero Keroppi no Sora Tobu Yume no Fune</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22649" target="_blank">Kero Kero Keroppi no Sanjuushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2266" target="_blank">Gakuen no Shuryousha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22651" target="_blank">Kero Kero Keroppi: Hasunoue Town Kiki Ippatsu!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22653" target="_blank">Kero Kero Keroppi no Mitsubachi Daisoudou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22655" target="_blank">Nerawareta Megami Tenshi Angeltia: Mamotta Ningentachi ni Uragirarete</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22657" target="_blank">Shin Seikimatsu: Yatsuto no Souguu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2267" target="_blank">Red Garden: Dead Girls</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22661" target="_blank">One Piece: Cry Heart</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22663" target="_blank">Seiken Tsukai no World Break</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22669" target="_blank">Gohan Kaijuu Pap</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22671" target="_blank">Momoya x Peeping Life: Go en Desu yo! II</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22673" target="_blank">Kuroko no Basket 2nd Season NG-shuu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22675" target="_blank">Peeping Life: Gekijou Original-ban</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22677" target="_blank">Appleseed Alpha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2269" target="_blank">Mobile Suit Gundam SEED Special Edition</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22683" target="_blank">Shiroishi no Yousei Pichi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22687" target="_blank">Terra Formars</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22689" target="_blank">Terra Formars: Bugs 2-hen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22693" target="_blank">Lady Jewelpet</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22695" target="_blank">Dragon Ball Z: Summer Vacation Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22699" target="_blank">Dragon Ball Z: Zenbu Misemasu Toshi Wasure Dragon Ball Z!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/228" target="_blank">FLCL</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22709" target="_blank">Zettai Zetsumei Dangerous Jiisan (2005)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2272" target="_blank">Mahou no Princess Minky Momo: Yume no Naka no Rondo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22711" target="_blank">Wazaguu! vs. Dangerous Jiisan Ja: Houfukuzettou! Anime Quiz</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2273" target="_blank">Mobile Suit Gundam Wing: Endless Waltz Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22729" target="_blank">Aldnoah.Zero</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2274" target="_blank">CLAMP in Wonderland</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22733" target="_blank">Dragon Collection</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22735" target="_blank">Oreca Battle</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2275" target="_blank">Saishuu Chikan Densha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22745" target="_blank">Brothers Conflict: Setsubou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2276" target="_blank">Shin Saishuu Chikan Densha</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22755" target="_blank">Chikasugi Idol Akae-chan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22757" target="_blank">X Maiden</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22759" target="_blank">Toaru Kagaku no Railgun S: Daiji na Koto wa Zenbu Sentou ni Osowatta</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2277" target="_blank">Mahou Yuugi 2D</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22763" target="_blank">Kara no Kyoukai Movie: Mirai Fukuin - Extra Chorus</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2278" target="_blank">Mahou Yuugi 3D</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22777" target="_blank">Dragon Ball Kai (2014)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2279" target="_blank">Nagagutsu wo Haita Neko</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22785" target="_blank">Sono Hanabira ni Kuchizuke wo: Risa x Miya Gekijou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22789" target="_blank">Barakamon</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2280" target="_blank">Hare Tokidoki Buta (TV)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22791" target="_blank">Sora Iro Hana Iro</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/229" target="_blank">Jigoku Shoujo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2281" target="_blank">Jikuu Tantei Genshi-kun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2282" target="_blank">Tezuka Osamu no Kyuuyaku Seisho Monogatari: In the Beginning</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22815" target="_blank">Yariman Fudousan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22817" target="_blank">Kindaichi Shounen no Jikenbo Returns</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22819" target="_blank">Aikatsu! Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2283" target="_blank">Red Baron</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22821" target="_blank">Himitsukessha Taka no Tsume EX</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22827" target="_blank">Magical?Taruruuto-kun Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2284" target="_blank">Transformers: Car Robots</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22831" target="_blank">Abarenbou Rikishi!! Matsutarou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22835" target="_blank">Himegoto</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22839" target="_blank">Cross Road</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2285" target="_blank">D.I.C.E.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22841" target="_blank">Okashina Hotel</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22845" target="_blank">Suzu 3 Tarou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22847" target="_blank">Kara no Kyoukai Movie: Mirai Fukuin - Manner Movie</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22849" target="_blank">Nyamen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2286" target="_blank">Little Nemo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22851" target="_blank">Apo Apo World: Giant Baba 90-bun 1-hon Shoubu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22859" target="_blank">Takanashi Rikka Kai: Chuunibyou demo Koi ga Shitai! Movie Lite</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2287" target="_blank">Kakutou Ryouri Densetsu Bistro Recipe</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22865" target="_blank">Rokujouma no Shinryakusha!? (TV)</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2288" target="_blank">Akihabara Dennou-gumi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22877" target="_blank">Seireitsukai no Blade Dance</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2289" target="_blank">Akihabara Dennou-gumi: 2011-nen no Natsuyasumi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22888" target="_blank">Hyokkori Hyoutan Shima</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2290" target="_blank">Superflat Monogram</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/230" target="_blank">Air Master</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2291" target="_blank">Tatakae!! Iczer-1</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2292" target="_blank">Bouken! Iczer 3</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2293" target="_blank">Kyoushoku Soukou Guyver</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2294" target="_blank">Mobile Suit Gundam SEED Destiny Special Edition</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22944" target="_blank">Mugen Senshi Valis</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22954" target="_blank">Hana no Zundamaru: Junk</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22960" target="_blank">Angel ga Tonda Hi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22962" target="_blank">Date A Live II: Kurumi Star Festival</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2298" target="_blank">Mobile Suit Gundam SEED: After-Phase Between the Stars</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22974" target="_blank">Sangokushi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22976" target="_blank">Kaibutsu-kun: Demon no Ken</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22978" target="_blank">Kaibutsu-kun: Kaibutsu Land e no Shoutai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2299" target="_blank">Uchuu no Kishi Tekkaman Blade OVA: Burning Clock</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22984" target="_blank">Hipira-kun ONA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22986" target="_blank">Hipira-kun Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2300" target="_blank">Uchuu no Kishi Tekkaman Blade OVA: Twin Blood</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22996" target="_blank">Shisei Sasshin</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/22998" target="_blank">Shin Skyers 5</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/24" target="_blank">School Rumble</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2301" target="_blank">Uchuu no Kishi Tekkaman Blade OVA: Missing Link</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23004" target="_blank">Tanoshii Bunmeishi: Tetsu Monogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2302" target="_blank">Mobile Suit SD Gundam Mk I</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23016" target="_blank">Hazedon</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2303" target="_blank">Mobile Suit SD Gundam Mk II</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23024" target="_blank">Peaceful Times (F02) Petit Film</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2304" target="_blank">Mobile Suit SD Gundam Mk IV</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23032" target="_blank">Ashita no Kibou: Kanashimi yo Arigatou - Takae Tsuneo Monogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23034" target="_blank">Furueru Kuchibiru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23038" target="_blank">Bakumatsu Rock</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2305" target="_blank">Mobile Suit SD Gundam Mk III</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23044" target="_blank">Re Boot</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23048" target="_blank">Tennen Koi-iro Alcohol</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2306" target="_blank">Mobile Suit SD Gundam's Counterattack</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23054" target="_blank">Nisou no Kuzu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2307" target="_blank">Lime-iro Senkitan: Nankoku Yume Roman</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23062" target="_blank">Heya/Keitai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23066" target="_blank">Kaidan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2308" target="_blank">Lime-iro Ryuukitan X</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/ Otetsudai Shimasu!"" target="_blank">"Azusa</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23084" target="_blank">Happiness Charge PreCure! Movie: Ningyou no Kuni no Ballerina</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23086" target="_blank">Kikansha Sensei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2310" target="_blank">Chou Kidou Densetsu DinaGiga</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23097" target="_blank">Kousagi Monogatari</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23099" target="_blank">Puchitto Gargantia: Marumaru no Gargantia</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/232" target="_blank">Asagiri no Miko</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2311" target="_blank">Shounen Kenya</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23101" target="_blank">Kuraibito</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23107" target="_blank">GO-GO Tamagotchi!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2312" target="_blank">Daishizen no Majuu: Bagi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23115" target="_blank">Hamatora The Animation: Saishuukai Chokuzen! Mao ga Okuru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2313" target="_blank">Muumindani no Suisei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23121" target="_blank">Jinsei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23125" target="_blank">Histoire d'Etty</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23129" target="_blank">Mahou no Princess Minky Momo: Hitomi no Seiza - Minky Momo Song Special</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2314" target="_blank">Tobe! Kujira no Peek</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23133" target="_blank">M3: Sono Kuroki Hagane</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23135" target="_blank">PriPara</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23137" target="_blank">Girls & Panzer Heartful Tank Disc Picture Drama</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2315" target="_blank">Injuu Alien</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23149" target="_blank">47 Todoufuken R</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2316" target="_blank">Akakichi no Eleven</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23151" target="_blank">Shounen Hollywood: Holly Stage for 49</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23153" target="_blank">Hayate no Gotoku! OVA</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23157" target="_blank">Kaze no Invitation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2317" target="_blank">Hen</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2318" target="_blank">Dog Soldier</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23171" target="_blank">Mahou Shoujo wa Kiss Shite Kawaru</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23179" target="_blank">Kyoukai no Rinne</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2319" target="_blank">Freedom Previsited</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23181" target="_blank">Otogi Banashi: Bunbuku Chagama</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23183" target="_blank">Itazura Post</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23185" target="_blank">Chamebou Kuukijuu no Maki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23187" target="_blank">Chamebou Shin Gachou: Nomi Fuufu Shikaeshi no Maki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23189" target="_blank">Dekobou Shingachou: Meian no Shippai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23191" target="_blank">Chokin no Susume</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23199" target="_blank">Durarara!!x2 Shou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/233" target="_blank">Cardcaptor Sakura</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2321" target="_blank">Giant Robo the Animation: Chikyuu ga Seishi Suru Hi</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23201" target="_blank">Sengoku Basara: Judge End</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23209" target="_blank">Sora no Method</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2322" target="_blank">Giant Robo Gaiden Ginrei</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23213" target="_blank">Kantoku Fuyuki Todoki</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23225" target="_blank">Yuru Yuri Nachuyachumi!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23227" target="_blank">Mikakunin de Shinkoukei: Kamoniku tte Midori-ppoi Aji ga Suru no ne.</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23229" target="_blank">Meshimase Lodoss-tou Senki: Sorette Oishii no?</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2324" target="_blank">Angel Blade</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23233" target="_blank">Shinmai Maou no Testament</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23237" target="_blank">Chuunibyou demo Koi ga Shitai! Ren Specials</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2325" target="_blank">Angel Blade Punish!</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23245" target="_blank">Go Go Toraemon</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23247" target="_blank">Oshaburi Announcer</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23249" target="_blank">Uchuu Senkan Yamato 2199: Hoshimeguru Hakobune</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2326" target="_blank">Nankyoku 28 Gou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23251" target="_blank">Gugure! Kokkuri-san</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23259" target="_blank">Gundam: G no Reconguista</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2327" target="_blank">Kyouhaku: Owaranai Ashita</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23265" target="_blank">Genroku Koi Moyou: Sankichi to Osayo</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23267" target="_blank">Osaru no Tairyou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23269" target="_blank">Hello!! Kiniro Mosaic</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2328" target="_blank">Kyouhaku II (Second): Mou Hitotsu no Ashita The Animation</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23273" target="_blank">Shigatsu wa Kimi no Uso</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23277" target="_blank">Saenai Heroine no Sodatekata</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23279" target="_blank">Gyakusatsu Kikan</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2329" target="_blank">Shin Kyouhaku 2 The Animation: Kizu ni Saku Hana Senketsu no Kurenai</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23281" target="_blank">Psycho-Pass 2</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23283" target="_blank">Zankyou no Terror</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23286" target="_blank">Paulette no Isu</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23290" target="_blank">Gekkan Shoujo Nozaki-kun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/2330" target="_blank">Jibaku-kun</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/23294" target="_blank">Lupin the IIIrd: Jigen Daisuke no Bohyou</a></div>
+        <div class="anime-card"><a href="https://myanimelist.net/anime/234" target="_blank">Daa! Daa! Daa!</a></div>
+
+
+    </section>
+    <footer>
+        <p>Feito com ❤️ para os fãs de animes musicais</p>
+    </footer>
+</body>
+</html>
